@@ -1,0 +1,5 @@
+site_name: Demo Microservice
+nav:
+  - Home: index.md
+  - API: api.md
+docs_dir: docs
