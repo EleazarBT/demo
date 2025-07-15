@@ -1,19 +1,16 @@
-apiVersion: backstage.io/v1alpha1    # Versión del esquema de catálogo de Backstage
-kind: Component                     # Tipo de entidad: un componente de software
+apiVersion: backstage.io/v1alpha1
+kind: Component
 
-metadata:                           # Metadatos de la entidad
-  name: demo                        # Nombre único dentro del catálogo (debe coincidir con el repo/project-slug)
-  description: Demo Spring Boot microservice  # Descripción legible para humanos
-
-  annotations:                      # Anotaciones que proporcionan metadatos adicionales
-    # TechDocs: apunta al directorio local con mkdocs.yml y la carpeta docs/
+metadata:
+  name: demo
+  description: Demo Spring Boot microservice
+  annotations:
+    # Le dice a Backstage que genere TechDocs desde la raíz del repo
     backstage.io/techdocs-ref: dir:.
-
-    # Link a tu repositorio GitHub: <owner>/<repo>
-    # Permite que otros plugins (CI, code-links, PR status) se integren automáticamente.
+    # Habilita enlaces automáticos al código y CI de GitHub
     github.com/project-slug: EleazarBT/demo
 
-spec:                               # Especificaciones de cómo clasificar y relacionar el componente
-  type: service                     # Tipo de componente (por ej. service, website, library, etc.)
-  lifecycle: experimental           # Estado del ciclo de vida (experimental, production, deprecated…)
-  owner: eleazarbt                  # Dueño/responsable (debe existir como User en tu catálogo)
+spec:
+  type: service
+  lifecycle: experimental
+  owner: eleazarbt
