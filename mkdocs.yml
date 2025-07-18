@@ -1,10 +1,19 @@
+# docs/mkdocs.yml
+
+## Deshabilita la detección errónea de URL por parte de TechDocs
+repo_url:  https://github.com/EleazarBT/demo
+edit_uri:  tree/main/docs/
+
 site_name: Demo Spring Boot Service
 nav:
-  - Visión general: docs/index.md
-  - API Markdown: docs/api.md
-  - JavaDoc HTML: docs/javadoc/index.html   # enlace generado
+  - Visión general: index.md
+  - API Markdown: api.md
+  - JavaDoc HTML: javadoc/index.html
+
 plugins:
-  - techdocs-core                           # Backstage lo añade si falta, pero es claro explicitarlo :contentReference[oaicite:2]{index=2}
+  - search
+  - techdocs-core
+
 markdown_extensions:
   - admonition
   - pymdownx.superfences
