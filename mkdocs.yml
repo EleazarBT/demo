@@ -1,14 +1,19 @@
-# docs/mkdocs.yml
-
-## Deshabilita la detección errónea de URL por parte de TechDocs
-repo_url:  https://github.com/EleazarBT/demo
-edit_uri:  tree/main/docs/
+# mkdocs.yml  (en la raíz)
 
 site_name: Demo Spring Boot Service
+
+#  ───── Indica dónde está tu contenido
+docs_dir: docs
+
+# ───── URL correcta de tu repo (sin /docs)
+repo_url:  https://github.com/EleazarBT/demo
+# ───── Prefijo para “Editar en GitHub”
+edit_uri:  blob/main/docs/
+
 nav:
   - Visión general: index.md
-  - API Markdown: api.md
-  - JavaDoc HTML: javadoc/index.html
+  - API Markdown:   api.md
+  - JavaDoc HTML:   javadoc/index.html
 
 plugins:
   - search
