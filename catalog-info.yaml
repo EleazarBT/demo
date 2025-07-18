@@ -5,9 +5,7 @@ metadata:
   name: demo
   description: Demo Spring Boot microservice
   annotations:
-    # Le dice a Backstage que genere TechDocs desde la raíz del repo
-    backstage.io/techdocs-ref: dir:.
-    # Habilita enlaces automáticos al código y CI de GitHub
+    backstage.io/techdocs-ref: dir:.        # raíz del repo
     github.com/project-slug: EleazarBT/demo
 
 spec:

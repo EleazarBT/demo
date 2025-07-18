@@ -1,5 +1,10 @@
-site_name: Demo Microservice
+site_name: Demo Spring Boot Service
 nav:
-  - Home: index.md
-  - API: api.md
-docs_dir: docs
+  - Visión general: docs/index.md
+  - API Markdown: docs/api.md
+  - JavaDoc HTML: docs/javadoc/index.html   # enlace generado
+plugins:
+  - techdocs-core                           # Backstage lo añade si falta, pero es claro explicitarlo :contentReference[oaicite:2]{index=2}
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
