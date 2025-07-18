@@ -5,8 +5,9 @@ metadata:
   name: demo
   description: Demo Spring Boot microservice
   annotations:
-    backstage.io/techdocs-ref: dir:./docs
+    backstage.io/techdocs-ref: url:https://github.com/EleazarBT/demo/tree/main
     github.com/project-slug: EleazarBT/demo
+
 
 spec:
   type: service
